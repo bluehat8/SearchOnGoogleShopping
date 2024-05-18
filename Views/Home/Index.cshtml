@@ -1,0 +1,65 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model List<ProductSearchResult>
+
+
+<h1>Formulario de búsqueda</h1>
+
+<div id="searchForm" method="post" asp-action="SearchProduct">
+    <div class="input-group mb-3">
+        <label class="input-group-text" for="product">Producto:</label>
+        <input type="text" class="form-control" id="product" name="product" required placeholder="(nombre referencia sku)" list="productList">
+        <datalist id="productList">
+            <option value="lavadora Hisense WFQY701418VJM">lavadora Hisense WFQY701418VJM</option>
+}        </datalist>
+        <button type="button" id="searchButton" class="btn btn-primary">Buscar</button>
+    </div>
+</div>
+
+
+<div id="searchResults">
+    @* Show all items *@
+</div>
+
+@section scripts {
+    <script>
+        $(document).ready(function () {
+            // Function to send the search request
+            function search() {
+                var searchTerm = $("#product").val();
+
+                // Send AJAX request to the server
+                $.ajax({
+                    url: `/Home/SearchProduct?product=${encodeURIComponent(searchTerm)}`,
+                    type: 'POST',
+                    contentType: "application/json",
+                    success: function (data) {
+                        // Display results in the partial view
+                        $('#searchResults').html(data);
+                    },
+                    error: function () {
+                        alert('You must enter a value');
+                    }
+                });
+            }
+
+            // Event handler for the search button
+            $('#searchButton').click(function () {
+                search();
+            });
+
+            // Event handler for keypress event on the input field
+            $('#product').keypress(function (e) {
+                // Check if the pressed key is Enter (key code 13)
+                if (e.which == 13) {
+                    search();
+                    // Prevent the form from submitting by default
+                    e.preventDefault();
+                }
+            });
+        });
+    </script>
+}
+
