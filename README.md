@@ -32,8 +32,7 @@ que la aplicación navegue y extraiga de manera eficiente datos relevantes de la
 
 ## Ejecución de la aplicación:
 
-1)
-Establece el proyecto como proyecto de inicio (si no está ya establecido).
+1) Establece el proyecto como proyecto de inicio (si no está ya establecido).
 2) Presiona F5 (o haz clic en el botón "Ejecutar sin depuración") para iniciar la aplicación.
 3) La aplicación normalmente se ejecutará en tu servidor de desarrollo local (por ejemplo, http://localhost:5000).
 
