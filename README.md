@@ -1,7 +1,7 @@
-﻿#Configuración del Proyecto
+﻿# Configuración del Proyecto
 Este documento proporciona instrucciones sobre cómo configurar y ejecutar el proyecto. Asegúrate de seguir los prerrequisitos antes de comenzar.
 
-#Prerrequisitos
+## Prerrequisitos
 Antes de comenzar, asegúrate de tener instalado lo siguiente:
 
 1) Visual Studio Community 2022: Descarga e instala la última versión de Visual Studio Community desde 
@@ -14,7 +14,7 @@ necesarias para construir y ejecutar aplicaciones .NET. NOTA: Este paso puede ha
 https://www.nuget.org/. Esta herramienta ayuda a administrar las dependencias del proyecto.
 
 
-#Integración de HtmlAgilityPack:
+# Integración de HtmlAgilityPack:
 
 1) Instalación de NuGet: El proyecto utiliza HtmlAgilityPack 1.11.61, que se ha instalado mediante NuGet. Esto garantiza que las bibliotecas 
 necesarias sean accesibles dentro del proyecto.
@@ -30,7 +30,7 @@ que la aplicación navegue y extraiga de manera eficiente datos relevantes de la
 
 
 
-##Ejecución de la aplicación:
+## Ejecución de la aplicación:
 
 1)
 Establece el proyecto como proyecto de inicio (si no está ya establecido).
@@ -38,11 +38,11 @@ Establece el proyecto como proyecto de inicio (si no está ya establecido).
 3) La aplicación normalmente se ejecutará en tu servidor de desarrollo local (por ejemplo, http://localhost:5000).
 
 
-##Comprensión del código:
+## Comprensión del código:
 
-1) El proyecto consta de dos partes principales: el controlador (HomeController.cs) y la vista (Index.cshtml).
+El proyecto consta de dos partes principales: el controlador (HomeController.cs) y la vista (Index.cshtml).
 
-2) HomeController.cs: Este archivo maneja la interacción del usuario a través del formulario de búsqueda. Procesa el término de búsqueda, realiza raspado web utilizando HtmlAgilityPack y devuelve los resultados.
+1) HomeController.cs: Este archivo maneja la interacción del usuario a través del formulario de búsqueda. Procesa el término de búsqueda, realiza raspado web utilizando HtmlAgilityPack y devuelve los resultados.
 
-3) Index.cshtml: Este archivo muestra el formulario de búsqueda y actualiza dinámicamente la sección de resultados utilizando AJAX cuando se realiza una búsqueda.
+2) Index.cshtml: Este archivo muestra el formulario de búsqueda y actualiza dinámicamente la sección de resultados utilizando AJAX cuando se realiza una búsqueda.
 
