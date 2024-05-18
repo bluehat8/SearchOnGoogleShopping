@@ -1,8 +1,8 @@
 ﻿# Configuración del Proyecto
-Este documento proporciona instrucciones sobre cómo configurar y ejecutar el proyecto. Asegúrate de seguir los prerrequisitos antes de comenzar.
+Este documento proporciona instrucciones sobre cómo configurar y ejecutar el proyecto. Se debe asegurar de seguir los prerrequisitos antes de comenzar.
 
 ## Prerrequisitos
-Antes de comenzar, asegúrate de tener instalado lo siguiente:
+Se debe tener instalado lo siguiente:
 
 1) Visual Studio Community 2022: Descarga e instala la última versión de Visual Studio Community desde 
 https://visualstudio.microsoft.com/downloads/. Durante la instalación, asegúrate de seleccionar la carga de trabajo  "ASP.NET y desarrollo web".
