@@ -17,7 +17,7 @@ https://www.nuget.org/. Esta herramienta ayuda a administrar las dependencias de
 # Integración de HtmlAgilityPack:
 
 1) Instalación de NuGet: El proyecto utiliza HtmlAgilityPack 1.11.61, que se ha instalado mediante NuGet. Esto garantiza que las bibliotecas 
-necesarias sean accesibles dentro del proyecto.
+necesarias sean accesibles dentro del proyecto. Para ello deberá dar click derecho sobre el proyecto (bajo la solucion "SearchOnGoogleShopping") y dar click en administrar paquetes nuget, le aparecerá una nueva ventana en la que dará click en examinar y buscará HtmlAgilityPack y eligirá la primera opción
 
 2) Raspado web: El archivo HomeController.cs en la carpeta de controladores aprovecha HtmlAgilityPack para extraer información de productos a partir de respuestas 
 HTML obtenidas de Google Shopping y "La Casa del Electrodoméstico".
