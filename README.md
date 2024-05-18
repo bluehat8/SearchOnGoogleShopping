@@ -7,7 +7,7 @@ Se debe tener instalado lo siguiente:
 1) Visual Studio Community 2022: Descarga e instala la última versión de Visual Studio Community desde 
 https://visualstudio.microsoft.com/downloads/. Durante la instalación, asegúrate de seleccionar la carga de trabajo  "ASP.NET y desarrollo web".
 
-2) SDK de .NET 6: Descarga e instala el SDK de .NET 6 desde https://dotnet.microsoft.com/en-us/download/dotnet/6.0. Esto proporciona las herramientas
+2) Lenguaje C# y SDK de .NET 6: Descarga e instala el SDK de .NET 6 desde https://dotnet.microsoft.com/en-us/download/dotnet/6.0. Esto proporciona las herramientas
 necesarias para construir y ejecutar aplicaciones .NET. NOTA: Este paso puede hacerse en la instalación VIsual Studio Community
 
 3) Administrador de paquetes NuGet: Visual Studio integra NuGet, pero también puedes descargar la herramienta de línea de comandos desde 
